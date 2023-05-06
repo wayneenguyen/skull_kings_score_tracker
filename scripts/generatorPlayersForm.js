@@ -41,7 +41,7 @@ const generateShipName = (length) => {
 const generatorPlayersForm = () => {
   const playersForm = document.getElementById("playersForm");
   const startGameContainer = document.getElementById("startGameContainer");
-  const shipNames = generateShipName(6);
+  const shipNames = generateShipName(10);
 
   shipNames.forEach((name) => {
     const label = document.createElement("label");

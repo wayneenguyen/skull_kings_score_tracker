@@ -1,0 +1,38 @@
+:root {
+  --text: #111111;
+  --background: #ffffff;
+  --input-background: #f9f9f9;
+  --input-border: #7a7773;
+  --progress-color: #a3d287;
+}
+
+.playerName > input {
+  background-color: var(--input-background);
+  color: var(--text);
+  border: 1px inset var(--input-border);
+}
+.scoreInput input {
+  background-color: var(--input-background);
+  color: var(--text);
+  border: 1px inset var(--input-border);
+}
+
+#progressBar li.finished::before {
+  background: var(--progress-color);
+  border-color: var(--progress-color);
+}
+#progressBar li.finished::after {
+  background: var(--progress-color);
+}
+#progressBar li:before {
+  border: 2px solid var(--input-border);
+  background: var(--background);
+  color: var(--text);
+}
+#mobileProgressBar {
+  background: var(--progress-color);
+}
+#themeToggle {
+  color: var(--text);
+  background-color: var(--background);
+}
